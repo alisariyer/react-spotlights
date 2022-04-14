@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Spotlight({color, move, delay}) {
+export default function Spotlight({ color, move }) {
+    const getRandomDelay = () => Math.floor(Math.random() * 5);
     const style = {
         left: move,
-        animationDelay: delay,
+        animationDelay: `${getRandomDelay()}s`
     }
   return (
     <svg
