@@ -10,18 +10,23 @@
     bottom: -20px;
     height: 150%;
     transform-origin: bottom center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    animation: move linear 3s infinite alternate;
+    animation: linear 3s infinite alternate;
 }
 
-@keyframes move {
+@keyframes left {
     from {
-        opacity: 1;
         transform: translateX(-50%) rotate(-20deg);
     }
     to {
-        opacity: 1;
+        transform: translateX(-50%) rotate(40deg);
+    }
+}
+
+@keyframes right {
+    from {
         transform: translateX(-50%) rotate(20deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(-40deg);
     }
 }
