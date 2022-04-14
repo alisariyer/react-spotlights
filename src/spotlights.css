@@ -1,0 +1,23 @@
+.spotlights-container {
+    position: absolute;
+    inset: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.spotlight {
+    position: absolute;
+    bottom: -20px;
+    height: 150%;
+    transform-origin: bottom center;
+    animation: move 3s linear infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-50%) rotate(-30deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(30deg);
+    }
+}
